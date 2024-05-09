@@ -1,0 +1,240 @@
+<!--
+    Attribution: 
+    <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Enamo Studios - Flaticon</a>
+-->
+
+<!-- Potential projects to include: calendar website, 240 pa, interaction design project, 412 project or labs, auto hist paper, baroda paper -->
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+   <meta charset ="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Alex Karapetkov">
+   <meta name="description" content="CS280 Portfolio">
+   <title>Alex Karapetkov's Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body id="bod">
+    <div class="container">
+
+        <div class="header">
+            <h1>
+                <span class="site-title">ALEX KARAPETKOV</span>
+                <span class="site-description">Student • Programmer • Web Developer</span>
+            </h1>
+        
+            <!-- Header icons -->
+            <!-- TODO: include attribute for smaller screen sizes-->
+            <div id="social-icons" class="icons">
+                <div class="linkedin">
+                    <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/alex-karapetkov/">
+                        <img src="https://cdn-icons-png.flaticon.com/128/15527/15527631.png"
+                        alt="LinkedIn icon with link to my LinkedIn">
+                    </a>
+                </div>
+                <div class="github">
+                    <a aria-label="My Github profile" target="_blank" href="https://github.com/Alex-Karapetkov">
+                        <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png"
+                        alt="Github icon with link to my github">
+                    </a>
+                </div>
+                <div class="resume">
+                    <a aria-label="My resume" target="_blank" href="https://alex-karapetkov.github.io/resume.pdf">
+                        <img src="https://cdn-icons-png.flaticon.com/128/8304/8304482.png"
+                        alt="pdf icon with link to my resume">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Header Links -->
+            <!-- TODO: include attribute for smaller screen sizes-->
+            <div class="header-links">
+                <a class="about-link" href="#about-me" data-scroll>About Me</a>
+                <a class="project-link" href="#my-projects" data-scroll>Projects</a>
+            </div>
+            <div class="down-arrow">
+                <a aria-label="down arrow" href="#about-me" data-scroll>
+                    <img id="darrow" src="https://cdn-icons-png.flaticon.com/128/3298/3298615.png"
+                    alt="down arrow icon; when clicked on scrolls to about me section">
+                </a>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <!-- Quick Introduction -->
+            <div class="my-story">
+                <h1 id="about-me" class="intro-header">About Me</h1>
+                <img class="headshot" src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/IMG_6896.jpg?raw=true" 
+                alt="Professional picture of me" width="18%" style="border-radius: 50%">
+                <p id="ip" class="intro-paragraph" alt="paragraph introducing myself and portfolio">
+                    My name is Alex Karapetkov. I am currently studying computer science at James Madison University and plan on graduating in
+                    May 2024 with a Bachelor of Science in CS along with a minor in History. This portfolio is meant to showcase some of the projects,
+                    both academic and personal, that I have completed in the last few years and some that I am still working on. They range from web
+                    applications made with HTML, CSS, and Javascript to the modeling of computer hardware, such as an ALU and program counter, using
+                    hardware description languages like Verilog.
+                </p>
+            </div>
+            <!-- Overview of Skills/Languages/Software I have experience with -->
+            <div class="skills">
+                <!-- Language Stack -->
+                <div class="languages">
+                    <h2>Languages</h2>
+                    <img class="java" src="https://cdn-icons-png.flaticon.com/128/226/226777.png"
+                    alt="java icon" width="65%">
+                    <img class="c" src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png"
+                    alt="c icon" width="65%">
+                    <img class="python" src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png"
+                    alt="python icon" width="65%">
+                    <img class="ruby" src="https://cdn-icons-png.flaticon.com/128/4085/4085915.png"
+                    alt="ruby icon" width="65%">
+                    <p class="languages-paragraph" id="lp">
+                        These are my favorite languages to use for software development and systems programming.
+                    </p>
+                </div>
+                <!-- Front End Stack -->
+                <div class="frontend">
+                    <h2>Front - End</h2>
+                    <img class="html" src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png"
+                    alt="html icon" width="65%">
+                    <img class="css" src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png"
+                    alt="css icon" width="65%">
+                    <img class="javascript" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+                    alt="javascript icon" width="65%">
+                    <img class="bootstrap" src="https://cdn-icons-png.flaticon.com/128/5968/5968672.png"
+                    alt="bootstrap icon" width="65%">
+                    <p class="frontend-paragraph" id="fp">
+                        These are my favorite languages and libraries to use for front-end development.
+                    </p>
+                </div>
+                <!-- Software and Tools Stack -->
+                <div class="software">
+                    <h2>Software</h2>
+                    <img class="unity" src="https://cdn-icons-png.flaticon.com/128/5969/5969346.png"
+                    alt="unity icon" width="65%">
+                    <img class="vscode" src="https://cdn-icons-png.flaticon.com/128/13170/13170416.png"
+                    alt="vs code icon" width="68%">
+                    <img class="linux" src="https://cdn-icons-png.flaticon.com/128/15465/15465695.png"
+                    alt="linux icon" width="75%">
+                    <img class="github-icon" src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png"
+                    alt="github icon" width="80%">
+                    <p class="software-paragraph" id="sp">
+                        These are my favorite software to work with for game development, collaboration, coding, and managing server services.
+                    </p>
+                </div>
+            </div>
+            <!-- Projects Section -->
+            <div class="projects" id="pcts">
+                <h1 id="my-projects">Projects</h1>
+                <!-- Project #1: GridKid Spreadsheet Application -->
+                <div class="gridkid">
+                    <div class="gridkid-description" id="gdes">
+                        <h2>GridKid Spreadsheet Application</h2>
+                        <img class="gridkid-ruby" src="https://cdn-icons-png.flaticon.com/128/4085/4085915.png"
+                        alt="ruby icon">
+                        <p class="gridkid-paragraph">GridKid is a spreadsheet application that is designed to run in the terminal. 
+                            I started working on it as part of my CS 430 class at JMU (Programming Languages) with Dr. Chris Johnson 
+                            and am using Ruby to implement it. It's designed to present a table of cells that the user can fill with 
+                            data and/or formulae to perform computational tasks, as you would with a spreadsheet application like 
+                            Microsoft Excel, for example. The project is broken down into four separate milestones: Model of the 
+                            Spreadsheet, an Interpreter, an Interface, and Variables and Control Flow.
+                            <a aria-label="leads to gridkid code on github" href="https://github.com/Alex-Karapetkov/GridKid-Spreadsheet-App">
+                                <button class="gridkid-button" type="button">Check it out!</button>
+                            </a>
+                        </p>
+                        <iframe id="gridkid-video" width="600" height="350" src="https://www.youtube.com/embed/-kSAdmIuT04?si=b9nK-fDAKVekWrzO" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Project #2: Virtual Reality App -->
+                <div class="vr-app">
+                    <div class="vr-description" id="vr">
+                        <h2>Virtual Reality App</h2>
+                        <img class="vr-unity" src="https://cdn-icons-png.flaticon.com/128/5969/5969346.png"
+                        alt="unity icon">
+                        <img class="vr-csharp" src="https://cdn-icons-png.flaticon.com/128/6132/6132221.png"
+                        alt="c sharp icon">
+                        <p class="vr-paragraph">This is a virtual reality application that I created using Unity as a part of a virtual reality
+                            elective at JMU. The app is designed to simulate the dangerous effects of climate change if it continues to get worse. 
+                            For example, the first scene is of a flooded city, the second is a powerful hurricane, the third is a forest fire, the
+                            fourth is the last iceberg melting, and the last scene is of a dried up lake due to severe drought. The user can explore
+                            each scene and interact with certain materials.
+                            <a aria-label="leads to vr app code on github" href="https://drive.google.com/drive/folders/1lhyyd6sTlJNV7wuJOq5q70IDZ_16t5Er?usp=drive_link">
+                                <button class="vr-button" type="button">Check it out!</button>
+                            </a>
+                        </p>
+                        <iframe class="vr-video" width="600" height="350" src="https://www.youtube.com/embed/TR6GaBb37FQ?si=2972tkmVCB62g82V" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Project #3: RISC-V ALU -->
+                <div class="riscv-alu">
+                    <div class="riscv-description" id="risc">
+                        <h2>RISC-V ALU</h2>
+                        <img class="verilog-icon" src="https://static-00.iconduck.com/assets.00/file-type-verilog-icon-256x256-goe8p7qm.png"
+                        alt="verilog icon">
+                        <p class="verilog-paragraph">This is a 8-bit RISC-V ALU that my partner, Joey Blethen, and I implemented for our
+                            Computer Architecture systems elective at JMU. We implemented it using the hardware description language Verilog
+                            and with the Vivado Design Suite. It takes two 8-bit operands, an ALUop input, and a function code from a instruction
+                            and it outputs an 8-bit result, along with a zero line indicating if the result is zero, an overflow line, and a carry out
+                            line.
+                            <a aria-label="button leads to verilog code on github" href="https://github.com/Alex-Karapetkov/RISCV-ALU">
+                                <button class="verilog-code-button" type="button">Check it out!</button>
+                            </a>
+                            <a aria-label="button leads to writeup of project" target="_blank"
+                            href="https://alex-karapetkov.github.io/writeup.pdf"
+                            alt="project writeup">
+                                <button class="writeup-button" type="button">Project Writeup</button>
+                            </a>
+                        </p>
+                        <img class="verilog-picture" src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/riscv_alu.png?raw=true"
+                        alt="picture of verilog module from project" id="verilogp">
+                    </div>
+                </div>
+                <!-- Project #4: Command-Line Shell -->
+                <div class="shell">
+                    <div class="shell-description" id="clshell">
+                        <h2>Command - Line Shell</h2>
+                        <img class="penguin" src="https://cdn-icons-png.flaticon.com/128/15465/15465695.png"
+                        alt="linux icon">
+                        <img class="c-shell-icon" src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png"
+                        alt="c language icon">
+                        <p class="shell-paragraph">
+                            This is a command-line shell that I implemented as part of a Computer Systems class at JMU with Dr. Kirkpatrick. It was coded with
+                            C and operates similar to the bash shell in Linux. The current implementation of this shell is minimally functional and can 
+                            run external programs and built-in commands, such as ls, head, and which. It also provides access to return codes.
+                            <a aria-label="button leads to shell code on github" href="https://github.com/Alex-Karapetkov/Command-Line-Shell">
+                                <button class="shell-button" type="button">Check it out!</button>
+                            </a>
+                        </p>
+                        <img class="shell-picture" src="https://github.com/Alex-Karapetkov/Command-Line-Shell/blob/main/shell.PNG?raw=true"
+                        alt="picture of shell code" id="shell-pic">
+                    </div>
+                </div>
+                <!-- Project #5: Applied Algorithms Labs/Homeworks -->
+                <div class="cs412">
+                    <div class="cs412-description" id="algorithms">
+                        <h2>Applied Algorithms Labs</h2>
+                        <img class="cs412-python" src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png"
+                        alt="python icon">
+                        <p class="cs412-paragraph">
+                            These are some of the labs I coded with python for my applied algorithms class at JMU. They employ some useful and efficient
+                            algorithms, techniques, and data structures, such as recursion, backtracking, dynamic programming, greedy algorithms, 
+                            Prim's algorithm, Bellman-Ford, and Dijkstra's algorithm.
+                            <a aria-label="button leads to code for labs on github" href="https://github.com/Alex-Karapetkov/Applied-Algorithms">
+                                <button class="cs412-button" type="button">Check it out!</button>
+                            </a>
+                        </p>
+                        <img class="cs412-picture" src="https://github.com/Alex-Karapetkov/Applied-Algorithms/blob/main/cs412.PNG?raw=true"
+                        alt="picture of cs412 code" id="algorithms-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+ </body>
+ </html>
