@@ -1,0 +1,574 @@
+<!-- Potential projects to include: calendar website, 240 pa, interaction design project, 
+ 412 project or labs, auto hist paper, baroda paper -->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Alex Karapetkov" />
+  <meta name="description" content="CS280 Portfolio" />
+  <title>Alex Karapetkov's Portfolio</title>
+  <link rel="stylesheet" href="spacing.css" />
+  <link rel="stylesheet" href="colors_and_fonts.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+  <!-- Header/Intro Page --------------------------------------------------------------------------------->
+  <header class="header">
+
+    <!-- Top-right navigation -->
+    <nav class="navigation_links">
+      <a href="#about" data-scroll>About Me</a>
+      <a href="#my-projects" data-scroll>Projects</a>
+    </nav>
+
+    <h1>
+      <span class="site-title">ALEX KARAPETKOV</span><br />
+      <span class="site-description">Power Apps Developer • Cybersecurity • Frontend/Software Developer</span>
+    </h1>
+
+    <!-- Social Icons -->
+    <div id="social-icons">
+      <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/alex-karapetkov/">
+        <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="LinkedIn icon" />
+        <!-- <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a> -->
+      </a>
+      <a aria-label="My Github profile" target="_blank" href="https://github.com/Alex-Karapetkov?tab=repositories">
+        <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="GitHub icon" />
+      </a>
+      <a class="pdf-icon" aria-label="My resume" href="#" onclick="openResumeModal(event)">
+        <img src="https://cdn-icons-png.flaticon.com/128/8304/8304482.png" alt="PDF icon" />
+      </a>
+    </div>
+
+    <!-- Down Arrow -->
+    <div class="down-arrow">
+      <a aria-label="down arrow" href="#about" data-scroll>
+        <img id="darrow" src="https://cdn-icons-png.flaticon.com/128/1634/1634155.png" alt="Down arrow icon" />
+      </a>
+    </div>
+  </header>
+
+  <!-- HTML modal allows user to select from multiple resumes (when pdf icon clicked on homepage) -->
+  <div id="resume-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeResumeModal()">&times;</span>
+      <h2>Select a Resume</h2>
+      <div class="resume-links">
+        <a href="https://alex-karapetkov.github.io/resumes/AK Cyber Resume.pdf" target="_blank">Cybersecurity Resume</a>
+        <a href="https://alex-karapetkov.github.io/resumes/AK SharePoint_Power Apps Resume.pdf" target="_blank">Power
+          Apps Developer Resume</a>
+        <a href="https://alex-karapetkov.github.io/resumes/AK Help Desk Resume.pdf" target="_blank">IT Help Desk
+          Resume</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- About Me --------------------------------------------------->
+  <section id="about" aria-labelledby="about-me">
+
+    <div class="about-content">
+      <img class="headshot"
+        src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images/headshot.jpg?raw=true"
+        alt="Professional picture of Alex Karapetkov" />
+
+      <div class="about-text">
+        <h2 id="about-me" class="intro-header">About Me</h2>
+
+        <div class="intro-paragraph">
+          <p class="intro-paragraph-section">
+            Hi, I'm Alex Karapetkov.
+            I'm a Computer Science graduate from James Madison University (2024) focused on secure,
+            user-centered solutions across cybersecurity, low-code development, software development, and IT
+            infrastructure.
+          </p>
+
+          <p class="intro-paragraph-section">
+            I hold certifications including
+            <a href="https://www.comptia.org/en-us/certifications/security/" target="_blank"
+              rel="noopener noreferrer">CompTIA Security+</a> and
+            <a href="https://www.comptia.org/en-us/certifications/casp/" target="_blank"
+              rel="noopener noreferrer">CASP+</a>,
+            <a href="https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/?practice-assessment-type=certification"
+              target="_blank" rel="noopener noreferrer">Microsoft Power Platform Fundamentals</a>,
+            along with specialized training in
+            <a href="https://academy.tcm-sec.com/p/security-operations-soc-101" target="_blank"
+              rel="noopener noreferrer">TCM Security's SOC 101 course</a> and
+            <a href="https://powerup.microsoft.com/" target="_blank" rel="noopener noreferrer">Microsoft's Power Up
+              Program</a>.
+            My
+            technical experience spans tools like Wireshark, Snort, and Nmap; systems such as Active Directory and
+            Splunk; and platforms including Power Apps, Power Automate, Power BI, and Dataverse.
+          </p>
+
+          <p class="intro-paragraph-section">
+            This portfolio showcases a mix of academic and personal projects, from a Bash-like command line shell built
+            in C to hardware modeling with Verilog and business applications developed with the Microsoft Power
+            Platform.
+          </p>
+
+          <p class="intro-paragraph-section">
+            I'm currently exploring opportunities in cybersecurity, software development, IT support, and Power Apps
+            development. If you'd like to connect, collaborate, or just say hi, feel free to reach out to me on
+            <a href="https://www.linkedin.com/in/alex-karapetkov/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>.
+          </p>
+        </div>
+        <a href="#my-projects" class="view-projects-btn">View My Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <!-- <section class="skills" aria-label="Skills"> -->
+  <!-- Languages -->
+  <!-- <div class="languages"> -->
+  <!--
+        <h3>Languages</h3>
+        <div class="project-icons">
+          <img src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="Java icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png" alt="C icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" alt="Python icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/4085/4085915.png" alt="Ruby icon" class="project-icon-small" />
+        </div>
+        <p>These are my favorite languages to use for software development and systems programming.</p>
+      </div>
+    -->
+
+  <!-- Frontend -->
+  <!--
+      <div class="frontend">
+        <h3>Front - End</h3>
+        <div class="project-icons">
+          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" alt="HTML icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" alt="CSS icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JavaScript icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968672.png" alt="Bootstrap icon" class="project-icon-small" />
+        </div>
+        <p>These are my favorite languages and libraries to use for front-end development.</p>
+      </div>
+    -->
+
+  <!-- Software -->
+  <!--
+      <div class="software">
+        <h3>Software</h3>
+        <div class="project-icons">
+          <img src="https://cdn-icons-png.flaticon.com/128/5969/5969346.png" alt="Unity icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/13170/13170416.png" alt="VS Code icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/15465/15465695.png" alt="Linux icon" class="project-icon-small" />
+          <img src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png" alt="GitHub icon" class="project-icon-small" />
+        </div>
+        <p>These are my favorite software to work with for game development, collaboration, coding, and managing server services.</p>
+      </div>
+    </section>
+  -->
+
+
+  <!-- Projects Section -->
+  <section class="projects" id="my-projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+
+
+
+    <!-- Project 1: Microsoft Power App Parking Solution  -->
+    <article class="project" aria-labelledby="power-platform-project-title">
+      <h3 id="power-platform-project-title">Microsoft Power Platform Parking Solution</h3>
+      <div class="project-icons">
+        <img
+          src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images///PowerPlatform_scalable.svg?raw=true"
+          alt="Dataverse Icon" class="project-icon-small" />
+        <img
+          src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images/Dataverse_scalable.svg?raw=true"
+          alt="Dataverse Icon" class="project-icon-small" />
+        <img
+          src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images/PowerApps_scalable.svg?raw=true"
+          alt="Dataverse Icon" class="project-icon-small" />
+        <img
+          src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images//PowerPages_scalable.svg?raw=true"
+          alt="Dataverse Icon" class="project-icon-small" />
+        <img
+          src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images/PowerFx_scalable.svg?raw=true"
+          alt="Dataverse Icon" class="project-icon-small" />
+        <img
+          src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images/PowerAutomate_scalable.svg?raw=true"
+          alt="Dataverse Icon" class="project-icon-small" />
+        <img
+          src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images/PowerBI_scalable.svg?raw=true"
+          alt="Dataverse Icon" class="project-icon-small" />
+
+      </div>
+      <p>
+        As part of Microsoft’s Power Up Challenge, I developed a parking management solution for Contoso High School
+        using Power Platform. The project included a Dataverse data model, a model-driven app for submitting parking
+        requests, a tablet-friendly canvas app for logging inspections, a Power Automate flow to confirm requests via
+        email, and a Power BI report to analyze parking trends and identify unauthorized usage. This end-to-end solution
+        highlights my skills in app development, automation, and data visualization with Power Platform.
+      </p>
+      <div class="project-buttons">
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/powerapps_parking_solution" target="_blank"
+          rel="noopener noreferrer">Check it out!</a>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/x3H_bk6jDF8?si=ZWPzlwypEXqb4-U_"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+
+
+
+    <!-- Project 2: CS 361 Labs -->
+    <article class="project" aria-labelledby="shell-title">
+      <h3 id="shell-title">Concurrent Systems Programming</h3>
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/15465/15465695.png" alt="Linux icon"
+          class="project-icon-small" />
+        <img src="https://cdn-icons-png.flaticon.com/128/9969/9969697.png" alt="C icon" class="project-icon-small" />
+      </div>
+      <p>
+        These labs are my completed assignments from CS 361: Computer Systems II at James Madison University, focusing
+        on concurrent systems programming in C. They cover topics such as process and thread management, inter-process
+        communication with pipes and spawning, signal handling, finite state machine simulation, and
+        client-server networking with sockets. All work reflects my own understanding and effort to master foundational
+        concepts in operating systems and network programming.
+      </p>
+      <div class="project-buttons">
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/Computer_Systems_Labs" target="_blank"
+          rel="noopener noreferrer">Check it out!</a>
+      </div>
+      <img src="https://github.com/Alex-Karapetkov/Computer_Systems_Labs/blob/main/cs361_labs_code_pic.png?raw=true"
+        alt="Picture of shell code" class="project-media" />
+    </article>
+
+
+
+    <!-- Project 3: RISC-V ALU -->
+    <article class="project" aria-labelledby="riscv-title">
+      <h3 id="riscv-title">RISC-V ALU</h3>
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/1404/1404247.png" alt="Verilog icon"
+          class="project-icon-small" />
+      </div>
+      <p>
+        This project, co-created with Joey Blethen for a Computer Architecture course, implements an 8-bit RISC-V
+        Arithmetic Logic Unit (ALU) in Verilog using Vivado, supporting AND, OR, addition,
+        subtraction, set-less-than, and NOR operations. It features a hierarchical design with 1-bit full adders forming
+        ripple carry adders/subtractors, and an ALU control unit that decodes instruction opcodes and function codes to
+        select operations safely. Combining structural and behavioral Verilog, the design balances control and
+        abstraction, ensuring accurate operation, overflow detection, and clear modularity. This work demonstrates
+        practical digital design trade-offs within a RISC-V architecture subset.
+      </p>
+      <div class="project-buttons">
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/RISCV-ALU" target="_blank"
+          rel="noopener noreferrer">Check it out!</a>
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/RISCV-ALU/blob/main/Project_Writeup.pdf"
+          target="_blank" rel="noopener noreferrer">Project Writeup</a>
+      </div>
+      <img src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images/riscv_alu.png?raw=true"
+        alt="Picture of Verilog module from project" class="project-media" />
+    </article>
+
+
+
+    <!-- Project 4: GridKid Spreadsheet Application -->
+    <article class="project" aria-labelledby="gridkid-title">
+      <h3 id="gridkid-title">GridKid Spreadsheet Application</h3>
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/4085/4085915.png" alt="Ruby icon" class="project-icon-small" />
+      </div>
+      <p>
+        GridKid is a spreadsheet application that is designed to run in the terminal. I started working on it as part of
+        my CS 430 class at JMU (Programming Languages) with Dr. Chris Johnson and am using Ruby to implement it. It's
+        designed to present a table of cells that the user can fill with data and/or formulae to perform computational
+        tasks, as you would with a spreadsheet application like Microsoft Excel, for example. The project is broken down
+        into four separate milestones: Model of the Spreadsheet, an Interpreter, an Interface, and Variables and Control
+        Flow.
+      </p>
+      <div class="project-buttons">
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/GridKid-Spreadsheet-App" target="_blank"
+          rel="noopener noreferrer">Check it out!</a>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-kSAdmIuT04?si=b9nK-fDAKVekWrzO"
+        title="GridKid YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </article>
+
+
+
+    <!-- Project 5: TSP Optimal and Approximate Algorithms -->
+    <article class="project" aria-labelledby="Traveling-Salesman-Problem-title">
+      <h3 id="Traveling-Salesman-Problem-title">Traveling Salesman Problem Solution Algorithms</h3>
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/2570/2570575.png" alt="Python icon"
+          class="project-icon-small" />
+        <img src="https://cdn-icons-png.flaticon.com/128/919/919837.png" alt="GNU Bash icon"
+          class="project-icon-small" />
+      </div>
+      <p>
+        For this project, I implemented and compared two approaches to the classic Traveling Salesman Problem (TSP): an
+        approximation algorithm using a Minimum Spanning Tree (MST) and Depth-First Search (DFS), and an exact solution
+        using the 2-Opt heuristic. The goal was to evaluate trade-offs between runtime efficiency and solution accuracy
+        on weighted, undirected graphs provided as user input. I created a set of test cases to validate correctness and
+        performance, and summarized the results in a final presentation. This project strengthened my algorithm design
+        skills and gave me hands-on experience with optimization techniques and automated testing in Python.
+      </p>
+      <div class="project-buttons">
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/Traveling-Salesman-Problem-Solutions"
+          target="_blank" rel="noopener noreferrer">Check it out!</a>
+      </div>
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vSp-XmWoG5-Y1Nj2IhqX88TkM--eqYw6Og65Kp1M0CcEe7d71ByoVm9iVRsiU3gVXMD7nfu6RvDOPj-/pubembed?start=false&loop=true&delayms=10000"
+        frameborder="0" width="560" height="315" allowfullscreen="true" mozallowfullscreen="true"
+        webkitallowfullscreen="true"></iframe>
+    </article>
+
+
+
+
+    <!-- Project 6: Interaction Design Figma Prototype -->
+    <article class="project" aria-labelledby="Interaction-Design-Project-title">
+      <h3 id="Interaction-Design-Project-title">Designing EatSafe: A Food Allergy App</h3>
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Figma icon"
+          class="project-icon-small" />
+      </div>
+      <p>
+        As part of a semester-long UX design project, my team and I researched the challenges college students face when
+        managing dietary restrictions and food allergies. Through user interviews, affinity diagrams, and competitive
+        analysis, we identified gaps in existing solutions and designed a mobile app to help students find safe places
+        to eat and shop. The final deliverables included wireframes, user scenarios, storyboards, and a high-fidelity
+        prototype built in Figma. We also presented our findings and design decisions in a final paper and slideshow.
+        EatSafe emphasizes personalized recommendations, intuitive navigation, and inclusive design tailored to users'
+        unique dietary needs.
+      </p>
+      <div class="project-buttons">
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/EatSafe-DietaryApp" target="_blank"
+          rel="noopener noreferrer">Check it out!</a>
+      </div>
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vTn-xx985g_ZdbUxch3jQQbhB7dGRdmiCJdbhmBr6x92u4w3jixiCk96uAyX098rJ2dopSpEZf90Kqh/pubembed?start=false&loop=true&delayms=3000"
+        frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+        webkitallowfullscreen="true"></iframe>
+    </article>
+
+
+
+
+    <!-- Project 7: Virtual Reality App -->
+    <article class="project" aria-labelledby="vr-title">
+      <h3 id="vr-title">Virtual Reality App</h3>
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/5969/5969346.png" alt="Unity icon"
+          class="project-icon-small" />
+        <img src="https://cdn-icons-png.flaticon.com/128/6132/6132221.png" alt="C# icon" class="project-icon-small" />
+      </div>
+      <p>
+        This VR app simulates climate change’s dangerous effects, including floods, hurricanes, forest fires, melting
+        icebergs, and droughts.
+        Built with Unity as a JMU elective project, users can explore and interact with each scene.
+      </p>
+      <div class="project-buttons">
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/Virtual-Reality-App" target="_blank"
+          rel="noopener noreferrer">Check it out!</a>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TR6GaBb37FQ?si=2972tkmVCB62g82V"
+        title="VR App YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </article>
+
+
+
+    <!-- Project 8: Applied Algorithms Labs -->
+    <article class="project" aria-labelledby="algorithms-title">
+      <h3 id="algorithms-title">Applied Algorithms Labs</h3>
+      <div class="project-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/2570/2570575.png" alt="Python icon"
+          class="project-icon-small" />
+      </div>
+      <p>
+        Labs coded in Python for an Applied Algorithms class at JMU, covering recursion, backtracking, dynamic
+        programming, greedy algorithms,
+        Prim’s, Bellman-Ford, and Dijkstra’s algorithms.
+      </p>
+      <div class="project-buttons">
+        <a class="project-button" href="https://github.com/Alex-Karapetkov/Applied-Algorithms" target="_blank"
+          rel="noopener noreferrer">Check it out!</a>
+      </div>
+      <img src="https://github.com/Alex-Karapetkov/Applied-Algorithms/blob/main/cs412.PNG?raw=true"
+        alt="Picture of Applied Algorithms code" class="project-media" />
+    </article>
+
+
+
+  </section>
+  </div>
+
+
+
+  <!-- Javascripts -------------------------------------------->
+
+  <!-- Modal toggle functionality -->
+  <script>
+    function openResumeModal(event) {
+      event.preventDefault();
+      document.getElementById("resume-modal").style.display = "block";
+    }
+
+    function closeResumeModal() {
+      document.getElementById("resume-modal").style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function (event) {
+      const modal = document.getElementById("resume-modal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+  </script>
+
+
+  <!-- JS to enlarge each project image when clicked on  -->
+  <script>
+    // Enlarge project image if clicked on
+    document.querySelectorAll('.project-media').forEach(img => {
+      img.addEventListener('click', (e) => {
+        e.stopPropagation();
+
+        // Add overlay
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay-active');
+        document.body.appendChild(overlay);
+
+        // Add enlarged class
+        img.classList.add('enlarged');
+
+        // Remove enlarged on overlay click
+        overlay.addEventListener('click', () => {
+          img.classList.remove('enlarged');
+          document.body.removeChild(overlay);
+        })
+      });
+    });
+
+    // Return project image to normal size
+    window.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.project-media.enlarged').forEach(img => {
+          img.classList.remove('enlarged')
+        });
+        document.querySelectorAll('.overlay-active').forEach(overlay => {
+          document.body.removeChild(overlay);
+        });
+      }
+    });
+  </script>
+
+
+  <!-- Add Background Overlay when project image is clicked on  -->
+  <style>
+    .overlay-active {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9998
+    }
+  </style>
+
+
+  <!-- Footer for Used Icons Attribution  -->
+  <footer class="attribution-footer">
+    <p>Resources Used:</p>
+    <div class="attribution-columns-container">
+      <div class="attribution-column">
+        <p>
+          LinkedIn Icon:
+          <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by
+            riajulislam - Flaticon</a>
+        </p>
+        <p>
+          GitHub Icon:
+          <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel
+            perfect
+            -
+            Flaticon</a>
+        </p>
+        <p>
+          PDF Icon:
+          <a href="https://www.flaticon.com/free-icons/pdf" title="pdf icons">Pdf icons created by BW Designer -
+            Flaticon</a>
+        </p>
+        <p>
+          Down Arrow Icon:
+          <a href="https://www.flaticon.com/free-icons/down-arrow" title="down arrow icons">Down arrow icons created by
+            Freepik - Flaticon</a>
+        </p>
+        <p>
+          Ruby Icon:
+          <a href="https://www.flaticon.com/free-icons/ruby" title="ruby icons">Ruby icons created by Freepik -
+            Flaticon</a>
+        </p>
+        <p>
+          GNU Bash Icon:
+          <a href="https://www.flaticon.com/free-icons/gnu-bash" title="gnu bash icons">Gnu bash icons created by
+            Freepik - Flaticon</a>
+        </p>
+      </div>
+      <div class="attribution-column">
+        <p>
+          Figma Icon:
+          <a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik -
+            Flaticon</a>
+        </p>
+        <p>
+          Unity Icon:
+          <a href="https://www.flaticon.com/free-icons/unity" title="unity icons">Unity icons created by Freepik -
+            Flaticon</a>
+        </p>
+        <p>
+          C# Icon:
+          <a href="https://www.flaticon.com/free-icons/c-sharp" title="c sharp icons">C sharp icons created by Freepik -
+            Flaticon</a>
+        </p>
+        <p>
+          Microchip Icon:
+          <a href="https://www.flaticon.com/free-icons/microchip" title="microchip icons">Microchip icons created by
+            smalllikeart - Flaticon</a>
+        </p>
+        <p>
+          Linux Icon:
+          <a href="https://www.flaticon.com/free-icons/linux" title="linux icons">Linux icons created by pocike -
+            Flaticon</a>
+        </p>
+        <p>
+          C Icon:
+          <a href="https://www.flaticon.com/free-icons/programming-language"
+            title="programming language icons">Programming
+            language icons created by Soremba - Flaticon</a>
+        </p>
+        <p>
+          Python Icon:
+          <a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created
+            by
+            Smashicons - Flaticon</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

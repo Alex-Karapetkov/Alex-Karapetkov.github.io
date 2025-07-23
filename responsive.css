@@ -1,0 +1,931 @@
+/* Responsive Styles to Different Screen Sizes ------------------------------------ */
+
+/* Covers Most Mobile Phone Sizes (in portrait) */
+@media (min-width: 375px) {
+    /* Intro Page  */
+
+    .site-title {
+        font-size: 3rem;
+    }
+
+    .site-description {
+        font-size: 1.5rem;
+    }
+
+    #social-icons a img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .down-arrow img {
+        position: relative;
+        bottom: 2rem;
+        width: 4rem;
+    }
+
+    .navigation_links {
+        gap: 1rem;
+    }
+
+    .navigation_links a {
+        font-size: 1.6rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        border-radius: 2rem;
+        width: 65%;
+        height: 30%;
+        font-size: 1rem;
+    }
+
+    .modal-content .close {
+        font-size: 3rem;
+    }
+
+    /* About Me Page  */
+
+    .about-content {
+        gap: 1rem;
+
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .about-text .intro-header {
+        font-size: 1.5rem;
+    }
+
+    .about-text .intro-paragraph {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .about-text .intro-paragraph a {
+        font-size: 0.8rem;
+    }
+
+    .about-content .headshot {
+        width: 10rem;
+        margin-top: 1rem;
+        margin-bottom: -5rem;
+    }
+
+    .view-projects-btn {
+        font-size: 0.8rem;
+        position: relative;
+        width: 80%;
+        bottom: 1.5rem;
+    }
+
+    /* Projects Page  */
+
+    .projects {
+        padding: 3rem 3rem;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+
+    .project p {
+        font-size: 0.9rem;
+        line-height: 1rem;
+        text-align: left;
+    }
+
+    .project-icons {
+        gap: 0.5rem;
+    }
+
+    .project-icons img {
+        width: 1.5rem;
+        height: 1.5rem;
+
+    }
+
+
+    .project h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-button {
+        font-size: 0.9rem;
+    }
+
+    .project iframe {
+        height: 20vh;
+        width: 28vh;
+    }
+
+    .project-media {
+        height: 20vh;
+        width: 28vh;
+    }
+
+    .attribution-footer {
+        font-size: 0.6rem;
+    }
+}
+
+/* Intermediate Phone Screen  */
+@media (min-width: 450px) {
+    /* Intro Page  */
+
+    .site-title {
+        font-size: 3.5rem;
+    }
+
+    .site-description {
+        font-size: 1.5rem;
+    }
+
+    #social-icons a img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .down-arrow img {
+        position: relative;
+        bottom: 2rem;
+        width: 4rem;
+    }
+
+    .navigation_links a {
+        font-size: 1.8rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        border-radius: 2rem;
+        width: 60%;
+        height: 30%;
+        font-size: 1rem;
+    }
+
+    .modal-content .close {
+        font-size: 4rem;
+    }
+
+    /* About Me Page  */
+
+    .about-content {
+        gap: 1rem;
+
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .about-text .intro-header {
+        font-size: 2rem;
+    }
+
+    .about-text .intro-paragraph {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+    .about-text .intro-paragraph a {
+        font-size: 0.9rem;
+    }
+
+    .about-content .headshot {
+        width: 10rem;
+        margin-top: 1rem;
+        margin-bottom: -5rem;
+    }
+
+    .view-projects-btn {
+        font-size: 0.9rem;
+        position: relative;
+        width: 80%;
+        bottom: 1.5rem;
+    }
+
+    /* Projects Page  */
+
+    .projects {
+        padding: 3rem 3rem;
+    }
+
+    .projects h2 {
+        font-size: 2.5rem;
+    }
+
+
+    .project p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+
+    .project-icons {
+        gap: 0.5rem;
+    }
+
+    .project-icons img {
+        width: 2rem;
+        height: 2rem;
+
+    }
+
+
+    .project h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-button {
+        font-size: 1.2rem;
+    }
+
+    .project iframe {
+        height: 25vh;
+        width: 30vh;
+    }
+
+    .project-media {
+        height: 25vh;
+        width: 30vh;
+    }
+
+    .attribution-footer {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+/* For smaller screen tablets and large phones  */
+@media (min-width: 600px) {
+    /* Intro Page  */
+
+    .site-title {
+        font-size: 4.5rem;
+    }
+
+    .site-description {
+        font-size: 1.8rem;
+    }
+
+    #social-icons a img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .down-arrow img {
+        position: relative;
+        bottom: 2rem;
+        width: 4rem;
+    }
+
+    .navigation_links a {
+        font-size: 2rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        border-radius: 2rem;
+        width: 50%;
+        height: 30%;
+        font-size: 1rem;
+    }
+
+    .modal-content .close {
+        font-size: 4rem;
+    }
+
+    /* About Me Page  */
+
+    .about-content {
+        gap: 1rem;
+
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .about-text .intro-header {
+        font-size: 2rem;
+    }
+
+    .about-text .intro-paragraph {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+    .about-text .intro-paragraph a {
+        font-size: 0.9rem;
+    }
+
+    .about-content .headshot {
+        width: 14rem;
+        margin-top: 1rem;
+        margin-bottom: -5rem;
+    }
+
+    .view-projects-btn {
+        font-size: 0.9rem;
+        position: relative;
+        width: 80%;
+        bottom: 1.5rem;
+    }
+
+    /* Projects Page  */
+
+    .projects h2 {
+        font-size: 2.5rem;
+    }
+
+
+    .project p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+
+    .project-icons img {
+        width: 2.5rem;
+        height: 2.5rem;
+
+    }
+
+
+    .project h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-button {
+        font-size: 1.2rem;
+    }
+
+    .project iframe {
+        height: 30vh;
+        width: 45vh;
+    }
+
+    .project-media {
+        height: 30vh;
+        width: 45vh;
+    }
+
+    .attribution-footer {
+        font-size: 0.7rem;
+    }
+
+}
+
+/* For Medium tablets and iPads (portrait)*/
+@media (min-width: 768px) {
+
+    /* Intro Page  */
+
+    .site-title {
+        font-size: 5rem;
+    }
+
+    .site-description {
+        font-size: 2rem;
+    }
+
+    #social-icons a img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .down-arrow img {
+        position: relative;
+        bottom: 2rem;
+        width: 4rem;
+    }
+
+    .navigation_links a {
+        font-size: 2.5rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        border-radius: 2rem;
+        width: 50%;
+        height: 30%;
+        font-size: 1.1rem;
+    }
+
+    .modal-content .close {
+        font-size: 4rem;
+    }
+
+    /* About Me Page  */
+
+    .about-content {
+        gap: 1rem;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .about-text .intro-header {
+        font-size: 3.5rem;
+    }
+
+    .about-text .intro-paragraph {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .about-text .intro-paragraph a {
+        font-size: 1rem;
+    }
+
+    .about-content .headshot {
+        width: 18rem;
+    }
+
+    .view-projects-btn {
+        font-size: 1rem;
+        position: relative;
+        bottom: 2rem;
+        width: 80%;
+    }
+
+    /* Projects Page  */
+
+    .projects h2 {
+        font-size: 2.5rem;
+    }
+
+
+    .project p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+
+    .project-icons img {
+        width: 3.5rem;
+        height: 3.5rem;
+
+    }
+
+
+    .project h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-button {
+        font-size: 1.5rem;
+    }
+
+    .project iframe {
+        height: 40vh;
+        width: 55vh;
+    }
+
+    .project-media {
+        height: 40vh;
+        width: 55vh;
+    }
+
+}
+
+/* For Small Laptops and iPads (landscape) */
+@media (min-width: 1024px) {
+
+    /* Intro Page  */
+
+    .site-title {
+        font-size: 6rem;
+    }
+
+    .site-description {
+        font-size: 2.5rem;
+    }
+
+    #social-icons a img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .down-arrow img {
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .navigation_links a {
+        font-size: 2.8rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        border-radius: 2rem;
+        width: 50%;
+        height: 30%;
+        font-size: 1.1rem;
+    }
+
+    .modal-content .close {
+        font-size: 4rem;
+    }
+
+    /* About Me Page  */
+
+    .about-content {
+        gap: 1rem;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .about-text .intro-header {
+        font-size: 3rem;
+    }
+
+    .about-text .intro-paragraph {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .about-text .intro-paragraph a {
+        font-size: 1.1rem;
+    }
+
+    .about-content .headshot {
+        width: 23rem;
+    }
+
+    .view-projects-btn {
+        font-size: 1.1rem;
+        position: relative;
+        bottom: 2rem;
+        width: 80%;
+    }
+
+    /* Projects Page  */
+
+    .projects h2 {
+        font-size: 3rem;
+    }
+
+
+    .project p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    .project-icons img {
+        width: 3.5rem;
+        height: 3.5rem;
+
+    }
+
+
+    .project h3 {
+        font-size: 1.8rem;
+    }
+
+    .project-button {
+        font-size: 1.5rem;
+    }
+
+    .project iframe {
+        height: 40vh;
+        width: 60vh;
+    }
+
+    .project-media {
+        height: 40vh;
+        width: 60vh;
+    }
+}
+
+/* Most Desktops and Standard Laptops  */
+@media (min-width: 1280px) {
+
+    /* Intro Page  */
+
+    .site-title {
+        font-size: 6.5rem;
+    }
+
+    .site-description {
+        font-size: 2.5rem;
+    }
+
+    #social-icons a img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .down-arrow img {
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .navigation_links {
+        gap: 2rem;
+    }
+
+    .navigation_links a {
+        font-size: 3rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        border-radius: 2rem;
+        width: 40%;
+        height: 30%;
+        font-size: 1.2rem;
+    }
+
+    .modal-content .close {
+        font-size: 4rem;
+    }
+
+    /* About Me Page  */
+
+    .about-text .intro-header {
+        font-size: 3.5rem;
+    }
+
+    .about-text .intro-paragraph {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .about-text .intro-paragraph a {
+        font-size: 1.2rem;
+    }
+
+    .about-content .headshot {
+        width: 21rem;
+    }
+
+    .view-projects-btn {
+        font-size: 1.2rem;
+        position: relative;
+        bottom: 2rem;
+    }
+
+    /* Projects Page  */
+
+    .projects h2 {
+        font-size: 3rem;
+    }
+
+
+    .project p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    .project-icons img {
+        width: 3.5rem;
+        height: 3.5rem;
+
+    }
+
+
+    .project h3 {
+        font-size: 1.8rem;
+    }
+
+    .project-button {
+        font-size: 1.5rem;
+    }
+
+    .project iframe {
+        height: 50vh;
+        width: 80vh;
+    }
+
+    .project-media {
+        height: 50vh;
+        width: 80vh;
+    }
+
+}
+
+/* For Large Desktops / Ultrawide Monitors  */
+@media (min-width: 1440px) {
+    /* Intro Page  */
+
+    .site-title {
+        font-size: 7rem;
+    }
+
+    .site-description {
+        font-size: 3rem;
+    }
+
+    #social-icons a img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .down-arrow img {
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .navigation_links {
+        gap: 2rem;
+    }
+
+    .navigation_links a {
+        font-size: 3rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        border-radius: 2rem;
+        width: 40%;
+        height: 30%;
+        font-size: 1.5rem;
+    }
+
+    .modal-content .close {
+        font-size: 4rem;
+    }
+
+    /* About Me Page  */
+
+    .about-text .intro-header {
+        font-size: 4rem;
+    }
+
+    .about-text .intro-paragraph {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+
+    .about-text .intro-paragraph a {
+        font-size: 1.3rem;
+    }
+
+    .about-content .headshot {
+        width: 25rem;
+    }
+
+    .view-projects-btn {
+        font-size: 1.3rem;
+        position: relative;
+        bottom: 2.5rem;
+    }
+
+    /* Projects Page  */
+
+    .projects h2 {
+        font-size: 3.5rem;
+    }
+
+
+    .project p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: left;
+    }
+
+    .project-icons img {
+        width: 3.5rem;
+        height: 3.5rem;
+
+    }
+
+
+    .project h3 {
+        font-size: 2rem;
+    }
+
+    .project-button {
+        font-size: 1.8rem;
+    }
+
+    .project iframe {
+        height: 50vh;
+        width: 80vh;
+    }
+
+    .project-media {
+        height: 50vh;
+        width: 80vh;
+    }
+}
+
+/* For 2K/4K and ultrawide setups  */
+@media (min-width: 1600px) {
+    /* Intro Page  */
+
+    .site-title {
+        font-size: 7rem;
+    }
+
+    .site-description {
+        font-size: 3rem;
+    }
+
+    #social-icons a img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .down-arrow img {
+        width: 5rem;
+    }
+
+    .navigation_links {
+        gap: 2rem;
+    }
+
+    .navigation_links a {
+        font-size: 3.5rem;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        border-radius: 2rem;
+        width: 40%;
+        height: 30%;
+        font-size: 1.5rem;
+    }
+
+    .modal-content .close {
+        font-size: 4rem;
+    }
+
+    /* About Me Page  */
+
+    .about-text .intro-header {
+        font-size: 5rem;
+    }
+
+    .about-text .intro-paragraph {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .about-text .intro-paragraph a {
+        font-size: 1.5rem;
+    }
+
+
+    .about-content .headshot {
+        width: 25rem;
+    }
+
+    .view-projects-btn {
+        font-size: 2rem;
+        position: relative;
+        /* top: 2rem; */
+    }
+
+    /* Projects Page  */
+
+    .projects h2 {
+        font-size: 3.5rem;
+    }
+
+
+    .project p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: left;
+    }
+
+    .project-icons img {
+        width: 3.5rem;
+        height: 3.5rem;
+
+    }
+
+
+    .project h3 {
+        font-size: 2rem;
+    }
+
+    .project-button {
+        font-size: 1.8rem;
+    }
+
+    .project iframe {
+        height: 50vh;
+        width: 80vh;
+    }
+
+    .project-media {
+        height: 50vh;
+        width: 80vh;
+    }
+}
+
+
+/* For Nest Hub-like Resolutions */
