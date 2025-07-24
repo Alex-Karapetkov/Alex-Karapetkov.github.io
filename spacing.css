@@ -122,9 +122,16 @@ header {
 
 /* About Me Section */
 #about {
-  height: 100vh;
+  height: 130vh;
   display: flex;
   justify-content: center;
+}
+
+#about-anchor {
+  position: relative;
+  top: 60%;
+  transform: translateY(-50%);
+  /* centers it vertically */
 }
 
 
@@ -142,10 +149,17 @@ header {
 
 
 .about-text {
-  width: 65%;
+  flex: 1 1 200px;
+  /* Flexible width but minimum 300px */
+  min-width: 1rem;
+  /* Prevent shrinking too much */
+  text-align: center;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .about-text h2 {
@@ -156,14 +170,24 @@ header {
   width: 5em;
   border-radius: 10%;
   height: auto;
+  /*Keep aspect ratio*/
+  max-width: 100%;
+  /*Prevent overflow*/
+  display: block;
+  margin: 0 auto;
+  /*Center horizontally on small screens*/
 }
 
 /* Navigate to projects from about me section button */
 .view-projects-btn {
-  display: inline-block;
-  margin-top: 2rem;
+  display: block;
+  /* Make it take full available width for easier centering */
+  margin: 2rem auto 0rem auto;
+  /* Top margin 2rem, auto left/right to center horizontally */
   padding: 0.75rem 1.5rem;
-  width: 48vh;
+  max-width: 300px;
+  /* Limit max width for readability */
+  width: 80%;
   text-align: center;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;

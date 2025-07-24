@@ -7,7 +7,7 @@ header {
     color: #C7F2A7;
 }
 
-.navigation_links a{
+.navigation_links a {
     color: #C7F2A7;
 }
 
@@ -203,6 +203,10 @@ body {
 .project-button {
     font-size: 1rem;
     text-decoration: none;
+}
+
+.video-quality-warning {
+    font-weight: bold;
 }
 
 .attribution-footer {

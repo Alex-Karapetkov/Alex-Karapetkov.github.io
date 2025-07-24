@@ -22,7 +22,7 @@
 
     <!-- Top-right navigation -->
     <nav class="navigation_links">
-      <a href="#about" data-scroll>About Me</a>
+      <a href="#about-anchor" data-scroll>About Me</a>
       <a href="#my-projects" data-scroll>Projects</a>
     </nav>
 
@@ -47,7 +47,7 @@
 
     <!-- Down Arrow -->
     <div class="down-arrow">
-      <a aria-label="down arrow" href="#about" data-scroll>
+      <a aria-label="down arrow" href="#about-anchor" data-scroll>
         <img id="darrow" src="https://cdn-icons-png.flaticon.com/128/1634/1634155.png" alt="Down arrow icon" />
       </a>
     </div>
@@ -74,6 +74,7 @@
   <!-- About Me --------------------------------------------------->
   <section id="about" aria-labelledby="about-me">
 
+    <div id="about-anchor"></div>
     <div class="about-content">
       <img class="headshot"
         src="https://github.com/Alex-Karapetkov/Alex-Karapetkov.github.io/blob/main/images/headshot.jpg?raw=true"
@@ -215,6 +216,11 @@
       <div class="project-buttons">
         <a class="project-button" href="https://github.com/Alex-Karapetkov/powerapps_parking_solution" target="_blank"
           rel="noopener noreferrer">Check it out!</a>
+      </div>
+      <div class="video-quality-warning">
+        <p style="text-align: center;">
+          For best quality, click the ⚙️ Settings icon in the video player and choose 720p or higher.
+        </p>
       </div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/x3H_bk6jDF8?si=ZWPzlwypEXqb4-U_"
         title="YouTube video player" frameborder="0"
@@ -473,6 +479,8 @@
       }
     });
   </script>
+
+  <!-- Message User if browser/display is zoomed in past 150% but avoids false positives on high DPI screens like MacBooks and 4K monitors -->
 
 
   <!-- Add Background Overlay when project image is clicked on  -->
