@@ -122,7 +122,7 @@ header {
 
 /* About Me Section */
 #about {
-  height: 130vh;
+  height: 130svh;
   display: flex;
   justify-content: center;
 }
