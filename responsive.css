@@ -633,7 +633,20 @@
 }
 
 /* * Large phones or phones in landscape */
-@media (max-width: 1024px) and (max-height: 620px) and (orientation: landscape) {
+@media (max-width: 1024px) and (max-height: 700px) and (orientation: landscape) {
+
+  body::before {
+    content: "Landscape Query Triggered";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: lime;
+    color: black;
+    z-index: 9999;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+    
     /* Intro Page  */
 
     .site-title {
