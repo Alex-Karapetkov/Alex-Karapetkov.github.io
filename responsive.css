@@ -1,7 +1,7 @@
 /* Responsive Styles to Different Screen Sizes ------------------------------------ */
 
 /* Covers Most Mobile Phone Sizes (in portrait) */
-@media (min-width: 320px) {
+@media (min-width: 350px) {
     /* Intro Page  */
 
     .site-title {
@@ -68,7 +68,7 @@
     }
 
     .about-content .headshot {
-        width: 10rem;
+        width: 14rem;
         margin-top: 1rem;
         margin-bottom: -2rem;
     }
@@ -633,23 +633,13 @@
 }
 
 /* * Large phones or phones in landscape */
-@media (max-width: 1024px) and (orientation: landscape) and (max-aspect-ratio: 20/9) {
-  body::before {
-    content: "iPhone Landscape Matched!";
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: red;
-    color: white;
-    padding: 0.5rem;
-    font-size: 1rem;
-    z-index: 9999;
-  }
-    
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+
+
     /* Intro Page  */
 
     .site-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .site-description {
@@ -657,14 +647,20 @@
     }
 
     #social-icons a img {
-        width: 5rem;
-        height: 5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #github-icon {
+        position: relative;
+        right: 0.3rem;
     }
 
     .down-arrow img {
         position: relative;
-        bottom: 1rem;
-        width: 3rem;
+        top: -1rem;
+        right: 0.3rem;
+        width: 2rem;
     }
 
     .navigation_links {
@@ -673,19 +669,19 @@
     }
 
     .navigation_links a {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     /* Modal Content */
     .modal-content {
         border-radius: 2rem;
         width: 50%;
-        height: 45%;
+        height: 55%;
         font-size: 1.1rem;
     }
 
     .modal-content .close {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     /* About Me Page  */
@@ -699,24 +695,24 @@
     }
 
     .about-text .intro-header {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .about-text .intro-paragraph {
-        font-size: .8rem;
-        line-height: 1.5rem;
+        font-size: 0.6rem;
+        line-height: 1rem;
     }
 
     .about-text .intro-paragraph a {
-        font-size: .8rem;
+        font-size: 0.6rem;
     }
 
     .about-content .headshot {
-        width: 15rem;
+        width: 10rem;
     }
 
     .view-projects-btn {
-        font-size: .8rem;
+        font-size: 0.6rem;
         position: relative;
         bottom: 2rem;
         width: 80%;
@@ -729,29 +725,29 @@
     }
 
     .projects h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
 
     .project p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 0.5rem;
+        line-height: 1rem;
         text-align: left;
     }
 
     .project-icons img {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
 
     }
 
 
     .project h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .project-button {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .project iframe {
