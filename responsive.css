@@ -1,7 +1,7 @@
 /* Responsive Styles to Different Screen Sizes ------------------------------------ */
 
 /* Covers Most Mobile Phone Sizes (in portrait) */
-@media (min-width: 350px) {
+@media (min-width: 320px) {
     /* Intro Page  */
 
     .site-title {
@@ -68,7 +68,7 @@
     }
 
     .about-content .headshot {
-        width: 14rem;
+        width: 10rem;
         margin-top: 1rem;
         margin-bottom: -2rem;
     }
@@ -633,13 +633,11 @@
 }
 
 /* * Large phones or phones in landscape */
-@media only screen and (orientation: landscape) and (max-height: 500px) {
-
-
+@media (max-width: 1024px) and (max-height: 500px) and (orientation: landscape) {
     /* Intro Page  */
 
     .site-title {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .site-description {
@@ -647,20 +645,14 @@
     }
 
     #social-icons a img {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #github-icon {
-        position: relative;
-        right: 0.3rem;
+        width: 5rem;
+        height: 5rem;
     }
 
     .down-arrow img {
         position: relative;
-        top: -1rem;
-        right: 0.3rem;
-        width: 2rem;
+        bottom: 1rem;
+        width: 3rem;
     }
 
     .navigation_links {
@@ -669,19 +661,19 @@
     }
 
     .navigation_links a {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     /* Modal Content */
     .modal-content {
         border-radius: 2rem;
         width: 50%;
-        height: 55%;
+        height: 45%;
         font-size: 1.1rem;
     }
 
     .modal-content .close {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     /* About Me Page  */
@@ -695,24 +687,24 @@
     }
 
     .about-text .intro-header {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .about-text .intro-paragraph {
-        font-size: 0.6rem;
-        line-height: 1rem;
+        font-size: .8rem;
+        line-height: 1.5rem;
     }
 
     .about-text .intro-paragraph a {
-        font-size: 0.6rem;
+        font-size: .8rem;
     }
 
     .about-content .headshot {
-        width: 10rem;
+        width: 15rem;
     }
 
     .view-projects-btn {
-        font-size: 0.6rem;
+        font-size: .8rem;
         position: relative;
         bottom: 2rem;
         width: 80%;
@@ -725,29 +717,29 @@
     }
 
     .projects h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
 
     .project p {
-        font-size: 0.5rem;
-        line-height: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
         text-align: left;
     }
 
     .project-icons img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
 
     }
 
 
     .project h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .project-button {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .project iframe {
@@ -758,25 +750,6 @@
     .project-media {
         height: 80vh;
         width: 150vh;
-    }
-
-    .project-media.enlarged {
-        position: static;
-        top: auto;
-        left: auto;
-        z-index: auto;
-        transform: none;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .overlay-active {
-        display: none;
-        background-color: transparent;
-        position: static;
-        width: auto;
-        height: auto;
-        z-index: auto;
     }
 
 }
@@ -818,7 +791,7 @@
     .modal-content {
         border-radius: 2rem;
         width: 50%;
-        height: 40%;
+        height: 50%;
         font-size: 1.2rem;
     }
 
