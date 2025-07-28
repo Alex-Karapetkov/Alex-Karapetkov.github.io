@@ -452,6 +452,9 @@
       img.addEventListener('click', (e) => {
         e.stopPropagation();
 
+        // Don't add another overlay if one already exists
+        if (document.querySelector('.overlay-active')) return;
+
         // Add overlay
         const overlay = document.createElement('div');
         overlay.classList.add('overlay-active');

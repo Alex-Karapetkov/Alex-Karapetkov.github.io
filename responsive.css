@@ -1,7 +1,7 @@
 /* Responsive Styles to Different Screen Sizes ------------------------------------ */
 
 /* Covers Most Mobile Phone Sizes (in portrait) */
-@media (min-width: 320px) {
+@media (min-width: 350px) {
     /* Intro Page  */
 
     .site-title {
@@ -35,7 +35,7 @@
     .modal-content {
         border-radius: 2rem;
         width: 65%;
-        height: 30%;
+        height: 40%;
         font-size: 1rem;
     }
 
@@ -68,7 +68,7 @@
     }
 
     .about-content .headshot {
-        width: 10rem;
+        width: 12rem;
         margin-top: 1rem;
         margin-bottom: -2rem;
     }
@@ -117,13 +117,13 @@
     }
 
     .project iframe {
-        height: 50vh;
-        width: 35vh;
+        height: 40vh;
+        width: 30vh;
     }
 
     .project-media {
-        height: 50vh;
-        width: 35vh;
+        height: 40vh;
+        width: 30vh;
     }
 
     .attribution-footer {
@@ -177,7 +177,9 @@
     /* About Me Page  */
 
     .about-content {
-        gap: 1rem;
+        /* gap: 1rem; */
+        display: flex;
+        flex-direction: column;
 
     }
 
@@ -199,9 +201,9 @@
     }
 
     .about-content .headshot {
-        width: 10rem;
+        width: 15rem;
         margin-top: 1rem;
-        margin-bottom: -2rem;
+        margin-bottom: -3rem;
     }
 
     .view-projects-btn {
@@ -310,8 +312,9 @@
     /* About Me Page  */
 
     .about-content {
-        gap: 1rem;
-
+        display: flex;
+        flex-direction: column;
+        /* gap: 1rem; */
     }
 
     .about-text {
@@ -332,9 +335,9 @@
     }
 
     .about-content .headshot {
-        width: 14rem;
+        width: 15rem;
         margin-top: 1rem;
-        margin-bottom: -2rem;
+        margin-bottom: -3rem;
     }
 
     .view-projects-btn {
@@ -374,12 +377,12 @@
 
     .project iframe {
         height: 55vh;
-        width: 60vh;
+        width: 55vh;
     }
 
     .project-media {
         height: 55vh;
-        width: 60vh;
+        width: 55vh;
     }
 
     .attribution-footer {
@@ -547,8 +550,8 @@
     .modal-content {
         border-radius: 2rem;
         width: 50%;
-        height: 30%;
-        font-size: 1.1rem;
+        height: 40%;
+        font-size: 1.2rem;
     }
 
     .modal-content .close {
@@ -633,11 +636,13 @@
 }
 
 /* * Large phones or phones in landscape */
-@media (max-width: 1024px) and (max-height: 500px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+
+
     /* Intro Page  */
 
     .site-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .site-description {
@@ -645,14 +650,20 @@
     }
 
     #social-icons a img {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #github-icon {
+        position: relative;
+        right: 0.3rem;
     }
 
     .down-arrow img {
         position: relative;
-        bottom: 1rem;
-        width: 3rem;
+        top: -1rem;
+        right: 0.3rem;
+        width: 2rem;
     }
 
     .navigation_links {
@@ -661,19 +672,19 @@
     }
 
     .navigation_links a {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     /* Modal Content */
     .modal-content {
         border-radius: 2rem;
         width: 50%;
-        height: 45%;
+        height: 75%;
         font-size: 1.1rem;
     }
 
     .modal-content .close {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     /* About Me Page  */
@@ -687,24 +698,24 @@
     }
 
     .about-text .intro-header {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .about-text .intro-paragraph {
-        font-size: .8rem;
-        line-height: 1.5rem;
+        font-size: 0.6rem;
+        line-height: 1rem;
     }
 
     .about-text .intro-paragraph a {
-        font-size: .8rem;
+        font-size: 0.6rem;
     }
 
     .about-content .headshot {
-        width: 15rem;
+        width: 12rem;
     }
 
     .view-projects-btn {
-        font-size: .8rem;
+        font-size: 0.6rem;
         position: relative;
         bottom: 2rem;
         width: 80%;
@@ -717,29 +728,29 @@
     }
 
     .projects h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
 
     .project p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 0.5rem;
+        line-height: 1rem;
         text-align: left;
     }
 
     .project-icons img {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
 
     }
 
 
     .project h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .project-button {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .project iframe {
@@ -752,6 +763,25 @@
         width: 150vh;
     }
 
+    .project-media.enlarged {
+        position: static;
+        top: auto;
+        left: auto;
+        z-index: auto;
+        transform: none;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .overlay-active {
+        display: none;
+        background-color: transparent;
+        position: static;
+        width: auto;
+        height: auto;
+        z-index: auto;
+    }
+
 }
 
 /* Most Desktops and Standard Laptops  */
@@ -761,11 +791,11 @@
     /* Intro Page  */
 
     .site-title {
-        font-size: 5.5rem;
+        font-size: 6rem;
     }
 
     .site-description {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #social-icons a img {
@@ -792,11 +822,11 @@
         border-radius: 2rem;
         width: 50%;
         height: 50%;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .modal-content .close {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     /* About Me Page  */
@@ -806,20 +836,20 @@
     }
 
     .about-text .intro-paragraph {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
     }
 
     .about-text .intro-paragraph a {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .about-content .headshot {
-        width: 20rem;
+        width: 18rem;
     }
 
     .view-projects-btn {
-        font-size: 1rem;
+        font-size: 1.2rem;
         position: relative;
         bottom: 1rem;
     }
